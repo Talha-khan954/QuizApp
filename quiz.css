@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #001C1D;
+    /* background-image: url('./images/background2.webp'); */
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.main-heading {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#quizContainer {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.header, .footer {
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer{
+    border-radius: 15px 15px 15px 15px;
+}
+
+.header div, .footer div {
+    margin: 10px;
+}
+
+#nextQuesBtn{
+    border-radius: 7px;
+    background: #00352C;
+    height: 30px;
+    width: 100px;
+    color: #fff;
+    border: none;
+}
+
+.body {
+    padding: 20px;
+}
+
+#htmlQues {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#htmlOptions li {
+    list-style: none;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #fff;
+    /* opacity: 0.5; */
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#htmlOptions li:hover {
+    background: #043F39;
+    /* opacity: 0.2; */
+}
+
+.correctAns {
+    background-color: #4caf50;
+}
+
+.wrongAns {
+    background-color: #f44336;
+}
+
+.resultContainer {
+    text-align: center;
+    padding: 20px;
+    background: #044d453f;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+#correctAns, #correctAns-T{
+    color: green;
+}
+
+#wrongAns, #wrongAns-T{
+    color: red;
+}
+
+#Percentage, #resultStatus{
+    color: #1967D2;
+}
+
+.result p {
+    font-size: 1.9em;
+    margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+    .header, .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #quizContainer {
+        width: 100%;
+    }
+
+    .main-heading {
+        font-size: 2em;
+    }
+}

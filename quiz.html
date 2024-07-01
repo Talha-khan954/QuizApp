@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ-APP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body onload="startQuiz()">
+
+
+    <h1 class="main-heading">QUIZ APP</h1>
+    <div id="quizContainer">
+        <div class="header">
+            <section>
+                <div>
+                    <span>Name:</span>
+                    <span id="userName">Talha Khan</span>
+                </div>
+                <div>
+                    <span>Email:</span>
+                    <span id="userEmail">tkkn1204@gmail.com</span>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <span>Timer:</span>
+                    <span id="timer">00:00</span>
+                </div>
+            </section>
+        </div>
+        <div class="body">
+            <div>
+                <h3 id="htmlQues"></h3>
+            </div>
+            <div>
+                <ol id="htmlOptions"></ol>
+            </div>
+        </div>
+        <div class="footer">
+            <div id="counter">
+                <span id="currentCount">1</span> / <span id="totalCount"></span>
+            </div>
+            <div>
+                <button onclick="nextQues()" id="nextQuesBtn" class="hide">NEXT QUES</button>
+            </div>
+        </div>
+    </div>
+    <div class="result">
+        <div class="resultContainer hide">
+            <p id="correctAns-T">Correct Answers: <span id="correctAns"></span></p>
+            <p id="wrongAns-T">Wrong Answers: <span id="wrongAns"></span></p>
+            <p id="Percentage">Percentage: <span id="percentage"></span>%</p>
+            <p id="resultStatus">Result: <span id="resultStatus"></span></p>
+        </div>
+    </div>
+</body>
+<script src="quiz.js"></script>
+</html>
